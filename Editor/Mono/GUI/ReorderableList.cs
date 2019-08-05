@@ -237,6 +237,9 @@ namespace UnityEditorInternal
         {
             get
             {
+                if (s_Defaults == null)
+                  s_Defaults = new Defaults();
+
                 return s_Defaults;
             }
         }
